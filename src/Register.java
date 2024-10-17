@@ -47,4 +47,8 @@ public class Register {
         }
         return false;
     }
+
+    //komentarz
+    //komentarz 2
+    //komentarz 3
 }
