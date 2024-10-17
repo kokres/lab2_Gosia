@@ -6,16 +6,16 @@ public class Main {
         Login loginBackend = new Login();
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter username: ");
+        System.out.print("Wprowadz nazwe uzytkownika ");
         String username = scanner.nextLine();
 
-        System.out.print("Enter password: ");
+        System.out.print("Wprowadz Haslo ");
         String password = scanner.nextLine();
 
         if (loginBackend.authenticate(username, password)) {
-            System.out.println("Login successful!");
+            System.out.println("Zalogowano ");
         } else {
-            System.out.println("Login failed. Invalid username or password.");
+            System.out.println("Logowanie nie powiodlo sie");
         }
 
         scanner.close();
@@ -28,7 +28,7 @@ public class Main {
         System.out.print("Podaj hasło: ");
         String password1 = scanner.nextLine();
 
-        System.out.print("Podaj adres email: ");
+        System.out.print("Podaj nie email: ");
         String email = scanner.nextLine();
 
         String result = register.registerUser(username1, password1, email);
