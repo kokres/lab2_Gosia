@@ -34,21 +34,5 @@ public class Main {
         String result = register.registerUser(username1, password1, email);
         System.out.println(result);
 
-        Login loginBackend = new Login();
-
-        System.out.print("Enter username: ");
-        String username1 = scanner.nextLine();
-
-        System.out.print("Enter password: ");
-        String password1 = scanner.nextLine();
-
-        if (loginBackend.authenticate(username1, password1)) {
-            System.out.println("Login successful!");
-        } else {
-            System.out.println("Login failed. Invalid username or password.");
-        }
-
-        scanner.close();
-
     }
 }
